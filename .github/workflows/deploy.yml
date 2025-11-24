@@ -71,6 +71,12 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          sudo apt-get install -y libmagic1
+          sudo apt-get install -y build-essential
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
@@ -88,10 +94,10 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Install python dependencies
+        run: pip3 install --upgrade nbconvert
       - name: Install and Build 🔧
         run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
