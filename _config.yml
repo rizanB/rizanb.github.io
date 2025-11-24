@@ -120,14 +120,14 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: Medium
-    rss_url: https://medium.com/@RizanB/feed
+# external_sources:
+#   - name: Medium
+#     rss_url: https://medium.com/@RizanB/feed
 
-  - name: Substack
-    posts:
-      - url: https://rizanb.substack.com/p/learn-ai-in-2025-without-burning
-        published_date: 2025-9-28
+#   - name: Substack
+#     posts:
+#       - url: https://rizanb.substack.com/p/learn-ai-in-2025-without-burning
+#         published_date: 2025-9-28
   # - name: Medium
   #   posts:
   #     - url: https://medium.com/@RizanB/a-gentle-introduction-to-feature-scaling-3e5f246c55dd
