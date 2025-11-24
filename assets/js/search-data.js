@@ -37,26 +37,15 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/books/";
               },
-            },{id: "post-abc",
+            },{id: "post-a-gentle-introduction-to-feature-scaling",
         
-          title: "abc",
+          title: 'A Gentle Introduction to Feature Scaling <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "an example of a blog post with some code",
+        description: "Medium",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/abc/";
-          
-        },
-      },{id: "post-just-a-moment",
-        
-          title: 'Just a moment... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.open("https://rizanb.substack.com/p/learn-ai-in-2025-without-burning", "_blank");
+            window.open("https://medium.com/@RizanB/a-gentle-introduction-to-feature-scaling-3e5f246c55dd", "_blank");
           
         },
       },{id: "books-the-godfather",
