@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "Gemfile",
+      "use": "@vercel/ruby",
+      "config": {
+        "buildCommand": "bundle install && bundle exec jekyll build"
+      }
+    }
+  ]
+}
