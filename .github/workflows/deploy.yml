@@ -96,9 +96,12 @@ jobs:
           value: ${{ github.repository }}
       - name: Install python dependencies
         run: pip3 install --upgrade nbconvert
+      - name: Disable frozen mode for Bundler
+        run: bundle config set frozen false
       - name: Install and Build 🔧
         run: |
           export JEKYLL_ENV=production
+          bundle install --jobs 4
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
@@ -109,3 +112,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+      - name: Re-enable frozen mode for Bundler
+        run: bundle config set frozen true
