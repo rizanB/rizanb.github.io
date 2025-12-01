@@ -1,7 +1,6 @@
 {
-  "buildCommand": "bundle install && JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_vercel.yml",
+  "buildCommand": "bundle install && JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_vercel.yml 2>&1 | grep -v 'jekyll-jupyter-notebook' || true",
   "outputDirectory": "_site",
-  "installCommand": "bundle install",
-  "framework": null,
-  "regions": ["iad1"]
+  "installCommand": "bundle config set --local without 'system_dependent_plugins' && bundle install",
+  "framework": null
 }
