@@ -1,3 +1,24 @@
 # Vercel-specific config
 url: https://rizanb-github-io.vercel.app
 baseurl: ""
+
+# Disable ImageMagick
+imagemagick:
+  enabled: false
+
+# Override the plugins list to exclude system-dependent ones
+plugins:
+  - jekyll-archives-v2
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-regex-replace
+  - jekyll-sitemap
+  - jekyll-tabs
+  - jekyll-terser
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jemoji
