@@ -1,12 +1,7 @@
 {
-  "builds": [
-    {
-      "src": "Gemfile",
-      "use": "@vercel/ruby",
-      "config": {
-        "buildCommand": "bundle install && bundle exec jekyll build"
-      }
-    }
-  ],
-  "outputDirectory": "_site"
+  "buildCommand": "bundle install && JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_vercel.yml",
+  "outputDirectory": "_site",
+  "installCommand": "bundle install",
+  "framework": null,
+  "regions": ["iad1"]
 }
