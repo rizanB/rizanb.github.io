@@ -63,9 +63,9 @@ ninja.data = [{
           description: "see 1D CNN example in repository",
           section: "Projects",handler: () => {
               window.location.href = "/projects/deep_learning_library_from_scratch/";
-            },},{id: "projects-youtube-channel",
-          title: 'YouTube Channel',
-          description: "short programming-related videos",
+            },},{id: "projects-rizanb-youtube-channel",
+          title: 'RizanB - YouTube Channel',
+          description: "Programming-related playlists",
           section: "Projects",handler: () => {
               window.location.href = "/projects/rizanb_youtube/";
             },},{
